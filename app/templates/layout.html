@@ -70,6 +70,11 @@
         {{form.submit(class="btn btn-outline-primary")}}
         </div>
         </form>
+        <div class="border-top p-3 text-center">
+          <small class="text-muted">
+              Already Have An Account? <a href="" data-toggle="modal" data-target="#modalLoginForm" class="close" data-dismiss="modal">Log In</a>
+          </small>
+      </div>
     </div>
   </div>
 </div>
@@ -103,6 +108,11 @@
           {{login_form.submit(class="btn btn-outline-primary")}}
         </div>
       </form>
+      <div class="border-top p-3 text-center">
+        <small class="text-muted">
+            Don't have an account? <a href="" data-toggle="modal" data-target="#modalRegisterForm" class="close pl-2" data-dismiss="modal">Register</a>
+        </small>
+    </div>
     </div>
   </div>
 </div>
@@ -115,5 +125,6 @@
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.4.1/js/bootstrap.min.js"></script>
 <!-- MDB core JavaScript -->
 <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mdbootstrap/4.12.0/js/mdb.min.js"></script>
+<script src="{{url_for('static', filename='js/main.js')}}"></script>
   </body>
 </html>
