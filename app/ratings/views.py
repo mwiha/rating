@@ -7,25 +7,17 @@ from PIL import Image
 from app.models import Post, User
 from app.ratings.forms import PostForm
 from ..main import views
-
-
 ratings = Blueprint('ratings', __name__)
-
-
 def save_picture(form_image):
     randome_hex = secrets.token_hex(8)
     f_name, f_ext = os.path.splitext(form_image.filename)
     picture_name = randome_hex + f_ext
     picture_path = os.path.join(current_app.root_path, 'static/featured_images', picture_name)
-    
     output_size = (1000, 400)
     final_image = Image.open(form_image)
     final_image.thumbnail(output_size)
-    
     final_image.save(picture_path)
-    
     return picture_name
-
 @ratings.route("/post/new", methods=['GET', 'POST'])
 #@login_required
 def newpost():
@@ -41,6 +33,5 @@ def newpost():
         db.session.commit()
         flash('Your post has been published!', 'success')
         return redirect(url_for('main.home'))
-    
     myposts = Post.query.order_by(Post.posted_date.desc())
     return render_template('newpost.html', title='New Post', form=form, legend='New Post', myposts=myposts)
