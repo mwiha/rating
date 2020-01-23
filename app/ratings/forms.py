@@ -5,7 +5,7 @@ from wtforms.validators import DataRequired, Length, Email, EqualTo, ValidationE
 from app.models import User
 from flask_login import current_user
 class PostForm(FlaskForm):
-    title = StringField('Title', validators=[DataRequired(), Length(min=10)])
+    title = StringField('Title', validators=[DataRequired(), Length(min=3)])
     content = TextAreaField('Content', validators=[DataRequired()])
     image = FileField('Featured Image', validators=[FileAllowed(['jpg', 'png', 'jpeg'])])
     submit = SubmitField('Upload')

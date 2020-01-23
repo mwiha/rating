@@ -7,7 +7,10 @@ from PIL import Image
 from app.models import Post, User
 from app.ratings.forms import PostForm
 from ..main import views
+
 ratings = Blueprint('ratings', __name__)
+
+
 def save_picture(form_image):
     randome_hex = secrets.token_hex(8)
     f_name, f_ext = os.path.splitext(form_image.filename)
