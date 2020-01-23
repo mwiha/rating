@@ -199,3 +199,9 @@ h1.heading {
   top: 2px;
   left: 2px;
 }
+
+/* Scrolling Text */
+
+html {
+  height: 100%;
+ }
