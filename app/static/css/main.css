@@ -205,3 +205,14 @@ h1.heading {
 html {
   height: 100%;
  }
+
+ .mainHero {
+  display: -webkit-box;
+  display: flex;
+  font-size: 1.5rem;
+  letter-spacing: .02em;
+  text-transform: uppercase;
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+}
