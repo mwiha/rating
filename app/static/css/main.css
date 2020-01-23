@@ -216,3 +216,13 @@ html {
   width: 100vw;
   background-size: cover;
 }
+
+.mainHero h4 {
+  position: absolute;
+  top: 50%;
+  left: -120px;
+  width: 120px;
+  color: #f16051;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
