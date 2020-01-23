@@ -203,13 +203,13 @@ h1.heading {
 /* Scrolling Text */
 
 #two {
-  background: #ff8e71;
-  height: 100%;
+  background: rgba(106,13,173,0.3);
+  height: 20vh;
   display: flex;
   align-items: center;
   justify-content: center;
   font-size: 30px;
-  color: #ebd8d0;
+  color: rgb(106,13,173);
 }
 
 .box {
@@ -225,7 +225,7 @@ h1.heading {
   content: '';
   height: 10px;
   position: absolute;
-  background: linear-gradient(180deg, #ff8e71, rgba(255, 142, 113, 0));
+  /* background: linear-gradient(180deg, #ff8e71, rgba(255, 142, 113, 0)); */
 }
 .box::after {
   left: 0;
@@ -235,7 +235,7 @@ h1.heading {
   content: '';
   height: 10px;
   position: absolute;
-  background: linear-gradient(180deg, rgba(255, 142, 113, 0), #ff8e71);
+  /* background: linear-gradient(180deg, rgba(255, 142, 113, 0), #ff8e71); */
 }
 
 .para {
@@ -252,7 +252,7 @@ h1.heading {
 .scroller li {
   opacity: 1;
   height: 20px;
-  padding: 10px;
+  padding: 20px;
   list-style: none;
 }
 
