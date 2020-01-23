@@ -1,8 +1,31 @@
 {% extends "layout.html" %} {% block content %}
-    <div class="heropage">
-      <div class="herocontent text-center">
-        <h1>One Rating</h1>
-        <p>One Rating At A Time</p>
+<div class="heropage">
+  <div class="herocontent text-center">
+    <h1>One Rating</h1>
+    <p>One Rating At A Time</p>
+  </div>
+</div>
+{% for post in posts %}
+<div class="col-xs-12 col-sm-4 col-md-8 col-lg-12">
+  <div class="card p-2">
+      <a class="img-card" href="">
+          <img src="{{ url_for('static', filename='featured_images/')}}{{post.image}}" />
+      </a>
+      <div class="card-content">
+          <h4 class="card-title">
+            {{post.title}}
+          </h4>
+          <p class="">
+            {{post.content}}
+          </p>
       </div>
-   </div>
-{% endblock content %}
+      <div class="card-read-more">
+          <a href="" class="btn btn-link btn-block">
+              Read More
+          </a>
+      </div>
+  </div>
+
+{% endfor %} {% endblock content %}
+
+
