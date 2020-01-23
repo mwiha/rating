@@ -202,40 +202,21 @@ h1.heading {
 
 /* Scrolling Text */
 
-/* html {
+#two {
+  background: #ff8e71;
   height: 100%;
- } */
-
- .mainHero {
-  display: -webkit-box;
   display: flex;
-  font-size: 1.5rem;
-  letter-spacing: .02em;
-  text-transform: uppercase;
-  height: 20vh;
-  width: 100vw;
-  background-size: cover;
-}
-
-.mainHero h4 {
-  position: absolute;
-  top: 50%;
-  left: -300px;
-  width: 80%;
-  color: #f16051;
-  -webkit-transform: translateY(-50%);
-          transform: translateY(-50%);
+  align-items: center;
+  justify-content: center;
+  font-size: 30px;
+  color: #ebd8d0;
 }
 
 .box {
-  height: 30px;
-  margin: auto;
+  height: 40px;
   overflow: hidden;
   position: relative;
-  color: #193651;
-  font-weight: bold;
 }
-
 .box::before {
   top: 0;
   left: 0;
@@ -243,9 +224,9 @@ h1.heading {
   width: 100%;
   content: '';
   height: 10px;
-  /* position: absolute; */
+  position: absolute;
+  background: linear-gradient(180deg, #ff8e71, rgba(255, 142, 113, 0));
 }
-
 .box::after {
   left: 0;
   bottom: 0;
@@ -253,30 +234,26 @@ h1.heading {
   width: 100%;
   content: '';
   height: 10px;
-  /* position: absolute; */
+  position: absolute;
+  background: linear-gradient(180deg, rgba(255, 142, 113, 0), #ff8e71);
 }
 
-.scroller {
+p {
+  float: left;
+}
+
+ul {
+  float: right;
   margin: 0;
-  padding: 10px 0;
-  -webkit-animation: scrollUp 2.5s 2.25s infinite forwards;
-          animation: scrollUp 2.5s 2.25s infinite forwards;
+  padding: 0;
+  -webkit-animation: scrollUp 4s ease-in-out infinite normal;
+          animation: scrollUp 4s ease-in-out infinite normal;
 }
-.scroller li {
+ul li {
   opacity: 1;
-  height: 40px;
-  padding: 1px 0;
-  line-height: 15px;
+  height: 20px;
+  padding: 10px;
   list-style: none;
-}
-
-@-webkit-keyframes fadeOut {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
 }
 
 @-webkit-keyframes scrollUp {
@@ -285,8 +262,18 @@ h1.heading {
             transform: translateY(0);
   }
   to {
-    -webkit-transform: translateY(-83.3333333333%);
-            transform: translateY(-83.3333333333%);
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
   }
 }
 
+@keyframes scrollUp {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-80%);
+            transform: translateY(-80%);
+  }
+}
