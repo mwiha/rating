@@ -245,3 +245,13 @@ html {
   height: 10px;
   position: absolute;
 }
+
+.box::after {
+  left: 0;
+  bottom: 0;
+  z-index: 1;
+  width: 100%;
+  content: '';
+  height: 10px;
+  position: absolute;
+}
