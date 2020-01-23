@@ -255,3 +255,17 @@ html {
   height: 10px;
   position: absolute;
 }
+
+ul {
+  margin: 0;
+  padding: 10px 0;
+  -webkit-animation: scrollUp 2.5s 2.25s infinite forwards;
+          animation: scrollUp 2.5s 2.25s infinite forwards;
+}
+ul li {
+  opacity: 1;
+  height: 40px;
+  padding: 1px 0;
+  line-height: 15px;
+  list-style: none;
+}
