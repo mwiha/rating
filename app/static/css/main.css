@@ -238,18 +238,18 @@ h1.heading {
   background: linear-gradient(180deg, rgba(255, 142, 113, 0), #ff8e71);
 }
 
-p {
+.para {
   float: left;
 }
 
-ul {
+.scroller {
   float: right;
   margin: 0;
   padding: 0;
   -webkit-animation: scrollUp 4s ease-in-out infinite normal;
           animation: scrollUp 4s ease-in-out infinite normal;
 }
-ul li {
+.scroller li {
   opacity: 1;
   height: 20px;
   padding: 10px;
