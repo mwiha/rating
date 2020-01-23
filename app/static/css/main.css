@@ -6,6 +6,10 @@ body{
 .heropage{
     height: 40vh;
 }
+
+nav a {
+  color: #fff;
+}
 .herocontent{
     position: relative;
     font-size: 40px;
