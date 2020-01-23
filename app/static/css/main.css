@@ -269,3 +269,12 @@ ul li {
   line-height: 15px;
   list-style: none;
 }
+
+@-webkit-keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
