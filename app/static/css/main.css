@@ -226,3 +226,12 @@ html {
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
 }
+
+.box {
+  height: 30px;
+  margin: auto;
+  overflow: hidden;
+  position: relative;
+  color: #193651;
+  font-weight: bold;
+}
