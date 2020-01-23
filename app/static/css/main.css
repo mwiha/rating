@@ -278,3 +278,14 @@ ul li {
     opacity: 0;
   }
 }
+
+@-webkit-keyframes scrollUp {
+  from {
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+  }
+  to {
+    -webkit-transform: translateY(-83.3333333333%);
+            transform: translateY(-83.3333333333%);
+  }
+}
