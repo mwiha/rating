@@ -202,9 +202,9 @@ h1.heading {
 
 /* Scrolling Text */
 
-html {
+/* html {
   height: 100%;
- }
+ } */
 
  .mainHero {
   display: -webkit-box;
@@ -212,7 +212,7 @@ html {
   font-size: 1.5rem;
   letter-spacing: .02em;
   text-transform: uppercase;
-  height: 100vh;
+  height: 20vh;
   width: 100vw;
   background-size: cover;
 }
@@ -220,8 +220,8 @@ html {
 .mainHero h4 {
   position: absolute;
   top: 50%;
-  left: -120px;
-  width: 120px;
+  left: -300px;
+  width: 80%;
   color: #f16051;
   -webkit-transform: translateY(-50%);
           transform: translateY(-50%);
@@ -243,7 +243,7 @@ html {
   width: 100%;
   content: '';
   height: 10px;
-  position: absolute;
+  /* position: absolute; */
 }
 
 .box::after {
@@ -253,16 +253,16 @@ html {
   width: 100%;
   content: '';
   height: 10px;
-  position: absolute;
+  /* position: absolute; */
 }
 
-ul {
+.scroller {
   margin: 0;
   padding: 10px 0;
   -webkit-animation: scrollUp 2.5s 2.25s infinite forwards;
           animation: scrollUp 2.5s 2.25s infinite forwards;
 }
-ul li {
+.scroller li {
   opacity: 1;
   height: 40px;
   padding: 1px 0;
@@ -289,3 +289,4 @@ ul li {
             transform: translateY(-83.3333333333%);
   }
 }
+
