@@ -14,7 +14,9 @@ bcrypt = Bcrypt(app)
 # import blueprints
 from app.main.views import main
 from app.users.views import users
+from app.ratings.views import ratings
 
 #register bluepprints
 app.register_blueprint(main)
 app.register_blueprint(users)
+app.register_blueprint(ratings)
